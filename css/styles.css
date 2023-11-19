@@ -225,7 +225,7 @@ nav div span i {
 .mainbgm {
 	overflow: hidden;
 	border-radius: 10px;
-	background-image: url(../images/aflwmobile.png);
+	background-image: url(../images/aflwmobile.webp);
 	background-size: cover;
 	height: 100vh;
 }
