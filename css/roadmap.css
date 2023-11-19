@@ -1,0 +1,346 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+	font-family: "Nunito", sans-serif;
+	transition: opacity 2s ease-in;
+}
+
+body {
+	max-width: 100vw !important;
+	/* width: 100vw; */
+	overflow-x: hidden !important;
+	/* margin: 0; */
+	/* height: 100vh; */
+	background: url(../images/bg2.webp);
+	background-repeat: no-repeat, no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+/* nav */
+/*NAV BAR */
+.logo {
+	padding-right: 5px !important;
+	margin-left: -15px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.togglee {
+	margin-top: -0px;
+}
+
+.header-active {
+	background-image: linear-gradient(to right, black, black);
+	box-shadow: 0 0.3rem 0.9rem rgba(0, 0, 0, 0.8);
+}
+
+#nav-bar {
+	width: 100%;
+	z-index: 10;
+	top: 0;
+	left: 0;
+}
+
+.navbar {
+	font-weight: bold;
+	background-image: linear-gradient(to right, black, black);
+	padding: 0;
+}
+
+.navbar-nav li {
+	padding: 0 10px;
+	float: right;
+}
+
+.navbar-nav li a {
+	color: white !important;
+	font-weight: 700;
+	font-size: 13px;
+	float: right;
+	text-align: right;
+}
+
+.dropdown {
+	font-size: 13px;
+	margin-top: -6px;
+	outline: none !important;
+	border: #fff;
+}
+
+.dropdow:focus {
+	border: #fff;
+	outline: none !important;
+}
+
+.dropbtn:focus {
+	border: #fff;
+	outline: none !important;
+}
+
+.dropdown:hover .dropbtn {
+	border: #fff;
+	border-radius: 10px;
+	outline: none !important;
+	color: white;
+}
+
+.dropdown-menu a:hover {
+	border-radius: 10px;
+	background-color: #f87143;
+	color: white;
+	text-decoration: none !important;
+}
+
+.dropdown .dropbtn {
+	font-size: 13px;
+	border: none;
+	font-weight: bold;
+	outline: none !important;
+	border: #fff;
+	color: #ffffff;
+	padding: 14px 16px;
+	background-color: transparent;
+	font-family: inherit;
+	margin: 0;
+}
+
+.dropdown-menu {
+	display: none;
+	border-color: 5px solid black;
+	border-radius: 5px;
+	width: 180px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	outline: none !important;
+	border: #fff;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-menu a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown:hover {
+	background-color: #f87143;
+	border-radius: 15px;
+}
+
+.fa-bars {
+	color: white !important;
+	font-size: 30px !important;
+	cursor: pointer;
+	border-radius: 20px;
+	opacity: 1 !important;
+	background-color: #f77143;
+	padding: 10px 25px 10px 25px;
+}
+
+.fa-times {
+	color: white !important;
+	font-size: 30px !important;
+	cursor: pointer;
+	background-color: #f77143;
+	opacity: 1 !important;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	padding: 10px 25px 10px 25px;
+}
+
+.navbar-toggler {
+	outline: none !important;
+}
+
+.nav-item:hover {
+	background-color: #f87143;
+	border-radius: 15px;
+}
+
+nav div span i:hover {
+	color: #f87143;
+}
+
+nav div span i {
+	color: white;
+	font-size: 2.3rem !important;
+	margin-left: 15px;
+}
+
+@media (max-width: 991px) {
+	.fa-times {
+		opacity: 1 !important;
+		z-index: 20 !important;
+		position: relative;
+	}
+
+	.collapse {
+		max-height: 100vh;
+		overflow: auto;
+		box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.7);
+		align-items: left;
+	}
+
+	.nav-item {
+		margin-top: 3%;
+	}
+
+	#nav-bar {
+		background-image: linear-gradient(to right, black, black);
+		box-shadow: 0 0 10 1vh rgba(0, 0, 0, 0.3);
+		/* position: fixed; */
+	}
+
+	.dropdown:hover {
+		/* display: block; */
+		background-color: transparent;
+	}
+
+	.dropdown {
+		display: flex;
+		margin-top: 6%;
+		justify-content: end;
+	}
+}
+
+.ourroadmap {
+	font-weight: 900;
+	font-family: "Nunito", sans-serif;
+	font-size: 400% !important;
+	text-transform: uppercase;
+	padding: 20px;
+	color: #000000;
+	text-shadow: -5px 3px 2px #fff;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+
+.mainr {
+	min-height: 60vh;
+	height: fit-content !important;
+	overflow: auto !important;
+	padding: 10px;
+	border-radius: 50px;
+	font-size: 30px !important;
+	transition: 1.5s ease-in-out !important;
+	background: rgba(255, 255, 255, 0.3);
+	/* border: 2px solid #fff !important; */
+	backdrop-filter: blur(20px);
+	box-shadow: -6px 8px 2px rgb(29 29 29 / 40%);
+}
+
+/** customer section **/
+
+.customer {
+	margin-bottom: 100px !important;
+	border-radius: 20px;
+}
+
+.customer_Carousel .carousel-caption {
+	position: inherit;
+	padding: 0;
+}
+
+.customer_box {
+	text-align: center;
+}
+
+.test_box {
+	text-align: left;
+}
+
+.customer_Carousel .test_box h4 {
+	font-size: 38px;
+	color: #030305;
+	line-height: 48px;
+	display: block;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+	padding: 30px 0px 30px 0px;
+	text-align: left;
+	font-weight: 900;
+}
+
+.customer_Carousel .test_box p {
+	font-size: 20px;
+	font-weight: 600 !important;
+	line-height: 28px;
+	color: #0b0b0c;
+}
+
+.carousel-indicators {
+	border: none;
+	padding-top: 0.9em;
+	padding-bottom: 0.9em;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	text-decoration: none;
+	font-weight: 900;
+	position: absolute !important;
+	z-index: 99999999999999999;
+	top: 40%;
+}
+
+.carousel-indicators li {
+	bottom: -37vh;
+	width: 30px !important;
+	height: 30px !important;
+	border-radius: 20px;
+	background: white;
+}
+
+.carousel-indicators li.active {
+	background: #f87143;
+}
+
+.prevv {
+	background-color: #f77143;
+	border-radius: 50px;
+	margin-left: -5px;
+	width: 40px !important;
+}
+
+.nextt {
+	background-color: #f77143;
+	border-radius: 50px;
+	margin-left: 5px;
+	width: 40px !important;
+}
+
+#myCarousel .carousel-control-next-icon,
+#myCarousel .carousel-control-prev-icon {
+	display: none;
+}
+
+@media (max-width: 600px) {
+	.ourroadmap {
+		line-height: 94%;
+	}
+
+	.customer {
+		padding-left: 40px !important;
+		padding-right: 40px !important;
+	}
+
+	.prevv {
+		margin-left: -5px;
+		width: 30px !important;
+	}
+
+	.nextt {
+		opacity: 0.3 !important;
+		margin-left: 5px;
+		width: 30px !important;
+	}
+}
+
+.carousel-indicators {
+	cursor: pointer;
+}
